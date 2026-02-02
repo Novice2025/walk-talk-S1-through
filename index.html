@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      Talk/Walk Someone Through: Master these Verbs in Business English |
+      NEXTATION Style
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn how to use 'talk someone through' and 'walk someone through' in professional English – for guiding, explaining, and demonstrating processes step-by-step, with a Brazilian touch."
+    />
+
+    <!-- Base reset + fonts -->
+    <style>
+      /* Basic CSS Reset */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, "Montserrat", sans-serif;
+        background: radial-gradient(
+          circle at top,
+          #1c1f3b 0%,
+          #050716 45%,
+          #02030b 100%
+        );
+        color: #ffffff;
+        overflow-x: hidden;
+      }
+
+      /* NEXTATION colour tokens (from PDFs) */
+      :root {
+        --bg-main: #02030b;
+        --bg-gradient: radial-gradient(
+          circle at top,
+          #1c1f3b 0%,
+          #050716 45%,
+          #02030b 100%
+        );
+        --card-bg: rgba(15, 18, 40, 0.92);
+        --card-soft-bg: rgba(18, 21, 50, 0.88);
+        --accent-cyan: #4ef2ff;
+        --accent-pink: #ff2f92;
+        --accent-green: #4dff9b;
+        --accent-yellow: #ffe25f;
+        --accent-purple: #aa5dff;
+        --muted: rgba(255, 255, 255, 0.65);
+        --border-glow: rgba(120, 120, 255, 0.45);
+        --shadow-strong: 0 0 36px rgba(130, 80, 255, 0.6);
+        --shadow-soft: 0 0 20px rgba(0, 0, 0, 0.65);
+        --radius-lg: 22px;
+        --radius-md: 16px;
+        --radius-sm: 10px;
+        --transition-fast: 0.18s ease-out;
+        --transition-med: 0.28s ease-out;
+      }
+
+      /* Layout */
+      .top-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(90deg, #00f5ff, #ff2f92, #ffe25f, #4dff9b);
+        box-shadow: 0 0 18px rgba(0, 0, 0, 0.9);
+        z-index: 10;
+      }
+
+      .page {
+        max-width: 1100px;
+        margin: 70px auto 40px auto;
+        padding: 0 18px 40px 18px;
+      }
+
+      .header {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 26px;
+      }
+
+      .orb {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: radial-gradient(
+            circle at 30% 20%,
+            #ffffff,
+            transparent 60%
+          ),
+          radial-gradient(circle at 70% 80%, #00fff0, transparent 55%),
+          radial-gradient(circle at 50% 50%, #ff2f92, transparent 65%);
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.7),
+          0 0 28px rgba(255, 0, 160, 0.55);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .orb::before {
+        content: "";
+        position: absolute;
+        inset: -20%;
+        background: conic-gradient(
+          from 0deg,
+          rgba(78, 242, 255, 0.28),
+          rgba(255, 47, 146, 0.3),
+          transparent 40%,
+          transparent 100%
+        );
+        animation: orbit 7s linear infinite;
+        mix-blend-mode: screen;
+      }
+
+      @keyframes orbit {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .header-text h1 {
+        font-family: "Space Grotesk", system-ui, sans-serif;
+        font-weight: 600;
+        letter-spacing: 0.11em;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        background: linear-gradient(90deg, #4ef2ff, #ff2f92);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .header-text h2 {
+        margin-top: 4px;
+        font-size: 1.5rem;
+        color: var(--accent-cyan);
+        text-shadow: 0 0 12px rgba(78, 242, 255, 0.5);
+      }
+
+      .header-text p {
+        margin-top: 6px;
+        font-size: 0.9rem;
+        color: var(--muted);
+        max-width: 520px;
+      }
+
+      /* Added the Daby Lego Disruptive Chain Method 4 Professionals line */
+      .header-text .tagline {
+        margin-top: 4px;
+        font-size: 0.85rem;
+        color: var(--accent-green);
+        letter-spacing: 0.05em;
+        font-weight: 500;
+      }
+
+      .pill {
+        margin-left: auto;
+        padding: 8px 16px;
+        border-radius: 999px;
+        background: linear-gradient(
+          90deg,
+          rgba(8, 235, 255, 0.25),
+          rgba(255, 0, 168, 0.2)
+        );
+        border: 1px solid rgba(142, 255, 255, 0.4);
+        font-size: 0.75rem;
+        color: #ffffff;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        box-shadow: var(--shadow-soft);
+      }
+
+      .pill span.badge-dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--accent-green);
+        box-shadow: 0 0 9px rgba(77, 255, 179, 0.9);
+      }
+
+      /* Sections baseline */
+      section {
+        margin-top: 22px;
+        padding: 20px 18px 22px 18px;
+        border-radius: var(--radius-lg);
+        background: linear-gradient(
+          135deg,
+          rgba(13, 16, 40, 0.98),
+          rgba(6, 8, 26, 0.98)
+        );
+        box-shadow: var(--shadow-soft);
+        border: 1px solid rgba(120, 120, 255, 0.32);
+        position: relative;
+        overflow: hidden;
+      }
+
+      section::before {
+        content: "";
+        position: absolute;
+        top: -60px;
+        left: -40px;
+        width: 260px;
+        height: 260px;
+        background: radial-gradient(
+          circle,
+          rgba(87, 57, 255, 0.35),
+          transparent 58%
+        );
+        opacity: 0.8;
+        pointer-events: none;
+      }
+
+      section h3 {
+        position: relative;
+        z-index: 1;
+        font-family: "Space Grotesk", system-ui, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        font-size: 0.95rem;
+        margin-bottom: 6px;
+      }
+
+      section h4 {
+        position: relative;
+        z-index: 1;
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+      }
+
+      section p,
+      section ul,
+      section li {
+        position: relative;
+        z-index: 1;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      section .subtitle {
+        color: var(--muted);
+        margin-bottom: 6px;
+        font-size: 0.85rem;
+      }
+
+      /* Specific spacing for Part 2 points */
+      .part2-point {
+        margin-bottom: 24px; /* This creates the desired two-line space */
+      }
+      .part2-point:last-of-type {
+        margin-bottom: 0; /* No extra space after the last point */
+      }
+
+      /* Different colours for each part to separate visually */
+      #expression {
+        border-color: rgba(78, 242, 255, 0.7);
+      }
+      #expression h3 {
+        color: var(--accent-cyan);
+      }
+
+      #when-to-use {
+        border-color: rgba(255, 47, 146, 0.7);
+      }
+      #when-to-use h3 {
+        color: var(--accent-pink);
+      }
+
+      #scenarios {
+        border-color: rgba(170, 93, 255, 0.8);
+      }
+      #scenarios h3 {
+        color: var(--accent-purple);
+      }
+
+      #exercises {
+        border-color: rgba(77, 255, 155, 0.7);
+      }
+      #exercises h3 {
+        color: var(--accent-green);
+      }
+
+      #vocabulary {
+        border-color: rgba(255, 226, 95, 0.7);
+      }
+      #vocabulary h3 {
+        color: var(--accent-yellow);
+      }
+
+      /* Highlighted text */
+      .highlight {
+        color: var(--accent-cyan);
+        text-shadow: 0 0 8px rgba(78, 242, 255, 0.4);
+        font-weight: 600;
+      }
+
+      .highlight-pink {
+        color: var(--accent-pink);
+        text-shadow: 0 0 8px rgba(255, 47, 146, 0.4);
+        font-weight: 600;
+      }
+
+      .highlight-green {
+        color: var(--accent-green);
+        text-shadow: 0 0 8px rgba(77, 255, 155, 0.4);
+        font-weight: 600;
+      }
+
+      .highlight-yellow {
+        color: var(--accent-yellow);
+        text-shadow: 0 0 8px rgba(255, 226, 95, 0.4);
+        font-weight: 600;
+      }
+
+      .highlight-purple {
+        color: var(--accent-purple);
+        text-shadow: 0 0 8px rgba(170, 93, 255, 0.4);
+        font-weight: 600;
+      }
+
+      /* Buttons */
+      .btn-primary {
+        background: linear-gradient(90deg, var(--accent-cyan), var(--accent-pink));
+        color: var(--bg-main);
+        border: none;
+        padding: 10px 20px;
+        border-radius: var(--radius-sm);
+        font-weight: 700;
+        cursor: pointer;
+        transition: var(--transition-fast);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      .btn-primary:hover {
+        opacity: 0.9;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+        transform: translateY(-1px);
+      }
+
+      .btn-secondary {
+        background: var(--card-soft-bg);
+        color: var(--accent-cyan);
+        border: 1px solid var(--accent-cyan);
+        padding: 10px 20px;
+        border-radius: var(--radius-sm);
+        font-weight: 600;
+        cursor: pointer;
+        transition: var(--transition-fast);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      .btn-secondary:hover {
+        background: rgba(78, 242, 255, 0.1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      }
+
+      .buttons-row {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+      }
+
+      /* Textarea & Counters */
+      textarea {
+        width: 100%;
+        min-height: 120px;
+        padding: 15px;
+        margin-top: 15px;
+        border-radius: var(--radius-sm);
+        border: 1px solid rgba(78, 242, 255, 0.4);
+        background-color: rgba(15, 18, 40, 0.7);
+        color: #ffffff;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        resize: vertical;
+        box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+        transition: border-color var(--transition-fast);
+      }
+
+      textarea:focus {
+        outline: none;
+        border-color: var(--accent-cyan);
+        box-shadow: inset 0 0 12px rgba(78, 242, 255, 0.2),
+          0 0 10px rgba(78, 242, 255, 0.3);
+      }
+
+      .char-counter {
+        font-size: 0.8rem;
+        color: var(--muted);
+        text-align: right;
+        margin-top: 5px;
+      }
+
+      /* Scenario Cards */
+      .scenarios-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .scenario-card {
+        background: var(--card-soft-bg);
+        border-radius: var(--radius-md);
+        padding: 20px;
+        border: 1px solid rgba(170, 93, 255, 0.4);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .scenario-title {
+        font-family: "Space Grotesk", system-ui, sans-serif;
+        font-weight: 600;
+        font-size: 1.05rem;
+        color: var(--accent-purple);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 5px;
+      }
+
+      .scenario-emoji {
+        font-size: 1.3rem;
+      }
+
+      .scenario-example {
+        background-color: rgba(0, 0, 0, 0.2);
+        border-left: 3px solid var(--accent-purple);
+        padding: 10px 15px;
+        border-radius: var(--radius-sm);
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.95);
+        white-space: pre-wrap; /* Ensures line breaks are respected */
+      }
+
+      .scenario-context {
+        font-size: 0.88rem;
+        color: var(--muted);
+        font-style: italic;
+      }
+
+      .scenario-pt {
+        font-size: 0.88rem;
+        color: var(--accent-yellow);
+        font-weight: 500;
+      }
+
+      .you {
+        color: var(--accent-green);
+        font-weight: 600;
+      }
+
+      /* Exercise Blocks */
+      .exercise-block {
+        background: var(--card-bg);
+        border-radius: var(--radius-lg);
+        padding: 25px;
+        margin-top: 20px;
+        border: 1px solid rgba(77, 255, 155, 0.4);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      }
+
+      .exercise-title {
+        font-family: "Space Grotesk", system-ui, sans-serif;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: var(--accent-green);
+        margin-bottom: 10px;
+      }
+
+      .exercise-instruction {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 8px;
+      }
+
+      /* Feedback Messages */
+      .feedback-message {
+        margin-top: 20px;
+        padding: 15px;
+        border-radius: var(--radius-sm);
+        font-size: 0.9rem;
+        font-weight: 600;
+        display: none; /* Hidden by default */
+        line-height: 1.5;
+      }
+
+      .feedback-correct {
+        background-color: rgba(77, 255, 155, 0.15);
+        border: 1px solid var(--accent-green);
+        color: var(--accent-green);
+        box-shadow: 0 0 10px rgba(77, 255, 155, 0.4);
+      }
+
+      .feedback-incorrect {
+        background-color: rgba(255, 47, 146, 0.15);
+        border: 1px solid var(--accent-pink);
+        color: var(--accent-pink);
+        box-shadow: 0 0 10px rgba(255, 47, 146, 0.4);
+      }
+
+      .feedback-tip {
+        background-color: rgba(78, 242, 255, 0.15);
+        border: 1px solid var(--accent-cyan);
+        color: var(--accent-cyan);
+        box-shadow: 0 0 10px rgba(78, 242, 255, 0.4);
+      }
+
+      /* Vocabulary Section */
+      .vocab-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+      .vocab-item {
+        background: var(--card-soft-bg);
+        border-radius: var(--radius-sm);
+        padding: 15px;
+        border: 1px solid rgba(255, 226, 95, 0.4);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .vocab-term {
+        font-family: "Space Grotesk", system-ui, sans-serif;
+        font-weight: 700;
+        color: var(--accent-yellow);
+        font-size: 1rem;
+        margin-bottom: 5px;
+      }
+
+      .vocab-def {
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.85);
+        margin-bottom: 5px;
+      }
+
+      .vocab-pt {
+        font-size: 0.85rem;
+        color: var(--muted);
+        font-style: italic;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        margin-top: 50px;
+        padding: 20px;
+        font-size: 0.8rem;
+        color: var(--muted);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-bar"></div>
+    <main class="page">
+      <header class="header">
+        <div class="orb"></div>
+        <div class="header-text">
+          <h1>NEXTATION</h1>
+          <h2>
+            Talk/Walk Someone Through: Guiding Explanations in Business English
+          </h2>
+          <p>
+            Aprenda a usar "talk someone through" e "walk someone through" em
+            contextos profissionais – para guiar, explicar e demonstrar
+            processos passo a passo, com um toque brasileiro.
+          </p>
+          <p class="tagline">Daby Lego Disruptive Chain Method 4 Professionals</p>
+        </div>
+        <div class="pill">
+          <span class="badge-dot"></span>
+          Lesson Active
+        </div>
+      </header>
+
+      <!-- Section 1: Expression -->
+      <section id="expression">
+        <h3>Part 1 · The Expressions</h3>
+        <h4>What do "talk someone through" and "walk someone through" mean?</h4>
+        <p>
+          The phrases
+          <span class="highlight">"talk someone through"</span> and
+          <span class="highlight">"walk someone through"</span> are both dynamic
+          verbs used to describe the act of guiding someone step-by-step
+          through a process, explanation, or demonstration. They go beyond a
+          simple "explain" by implying a more active, detailed, and often
+          interactive approach to ensure the other person fully understands or
+          can perform a task.
+        </p>
+        <p>
+          While "explain" might simply involve stating facts or giving
+          information, "talk someone through" and "walk someone through" convey
+          a commitment to ensuring comprehension. You are literally "talking"
+          or "walking" alongside them, making sure they follow each stage.
+          This is particularly valuable in professional settings where clarity,
+          accuracy, and shared understanding are paramount.
+        </p>
+        <p>
+          The subtle difference between the two often lies in the context:
+          <span class="highlight-cyan">"Talk someone through"</span> is
+          frequently used for verbal explanations, concepts, or documents,
+          where you're guiding them with words. For example, "I'll talk you
+          through the new marketing strategy."
+          <span class="highlight-cyan">"Walk someone through"</span> often
+          implies a more physical or visual demonstration, like guiding someone
+          through a software interface, a physical process, or a sequence of
+          actions. For instance, "I'll walk you through the steps to submit
+          your expense report online." However, in many business contexts, they
+          are used interchangeably to mean a thorough, guided explanation.
+        </p>
+        <p>
+          Think of it as "explicar detalhadamente," "guiar passo a passo," or
+          "demonstrar o processo" em português. While "explain" is fine, these
+          phrases add a layer of active guidance and thoroughness that is
+          highly valued in professional settings.
+        </p>
+        <div class="buttons-row">
+          <button
+            class="btn-secondary"
+            type="button"
+            onclick="playTalkThrough()"
+          >
+            🔊 Listen 'talk through'
+          </button>
+          <button
+            class="btn-secondary"
+            type="button"
+            onclick="playWalkThrough()"
+          >
+            🔊 Listen 'walk through'
+          </button>
+        </div>
+      </section>
+
+      <!-- Section 2: When & how to use it -->
+      <section id="when-to-use">
+        <h3>Part 2 · When & how to use them</h3>
+        <h4>Professional contexts where Brazilians need these verbs.</h4>
+
+        <p class="part2-point">
+          In Portuguese, it's common to say "vou te explicar" (I will explain
+          to you) or "vamos discutir os passos" (let's discuss the steps). In
+          English, using
+          <span class="highlight-pink">"talk someone through"</span> and
+          <span class="highlight-pink">"walk someone through"</span> elevates
+          this communication. They demonstrate that you're not just providing
+          information, but actively <span class="highlight-pink">guiding the person</span>
+          through the process, ensuring they grasp every detail. This shows a
+          higher level of engagement and commitment to their understanding.
+        </p>
+
+        <p class="part2-point">
+          These phrases are particularly powerful because they imply a
+          structured, methodical approach to sharing information. They suggest
+          you're breaking down complexity into manageable parts, making it
+          easier for the recipient to follow along and absorb the content. This
+          is a significant upgrade from simply "explaining," which can
+          sometimes feel less collaborative or less comprehensive.
+        </p>
+
+        <p class="part2-point">
+          Use <span class="highlight-pink">“talk someone through”</span> or
+          <span class="highlight-pink">“walk someone through”</span> when
+          you want to:
+        </p>
+
+        <p class="part2-point">
+          <span class="highlight-pink">Offer a Detailed, Guided Explanation:</span>
+          Instead of merely saying "I will explain the report," you can say "I
+          will <span class="highlight-pink">walk you through</span> the report."
+          This indicates that you will present each section, elaborate on every
+          data point, and address questions along the way. It's a more active
+          and engaging way to ensure comprehensive understanding, moving beyond
+          a superficial overview.
+        </p>
+
+        <p class="part2-point">
+          <span class="highlight-pink">Demonstrate a Process or System:</span>
+          When you need to show how something works, such as a new software
+          application, a complex procedure, or a workflow,
+          <span class="highlight-pink">"walk someone through"</span> is the
+          perfect choice. You are literally "walking" with the person through
+          each step, often visually or interactively, ensuring they can replicate
+          the actions themselves. This is far more effective than just verbally
+          "explaining" the steps.
+        </p>
+
+        <p class="part2-point">
+          <span class="highlight-pink">Ensure Comprehension in Complex Situations:</span>
+          When information is dense, technical, or critical, using these
+          expressions highlights your commitment to ensuring the listener not
+          only hears the information but truly understands it. It's a proactive
+          way to prevent misunderstandings, align expectations, and confirm that
+          everyone is on the same page, especially when dealing with sensitive
+          or high-stakes topics.
+        </p>
+
+        <p class="part2-point">
+          <span class="highlight-pink">Build Trust and Collaboration:</span>
+          By offering to guide someone through a topic, you demonstrate
+          patience, helpfulness, and a collaborative spirit. This approach is
+          invaluable when onboarding new team members, training colleagues, or
+          presenting intricate ideas to stakeholders. It positions you as a
+          supportive expert rather than just a lecturer.
+        </p>
+
+        <p class="part2-point">
+          <span class="highlight-pink">The Professional "Brazilian Way" of Explaining:</span>
+          For Brazilian professionals, who often value clarity, personal
+          connection, and ensuring everyone is included, these expressions are
+          the English equivalent of saying "vamos sentar e eu te mostro
+          direitinho" (let's sit down and I'll show you properly) or "vou te
+          dar uma aula sobre isso" (I'll give you a lesson on this), but in a
+          more concise and formal business English manner. They convey the idea
+          that you are there to help the person navigate the information, not
+          just to deliver it. This makes your communication more impactful and
+          culturally attuned.
+        </p>
+      </section>
+
+      <!-- Section 3: Scenarios -->
+      <section id="scenarios">
+        <h3>Part 3 · Real-world scenarios</h3>
+        <h4>See "talk/walk someone through" in action in common business situations.</h4>
+        <div class="scenarios-grid">
+          <!-- Scenario 1: New Software Training -->
+          <article class="scenario-card">
+            <div class="scenario-title">
+              <span class="scenario-emoji">💻</span> New Software Training
+            </div>
+            <p class="scenario-example">
+              <span class="you">Onboarding a new hire:</span><br />
+              “I’ll
+              <span class="highlight">walk you through</span> the new CRM
+              system this afternoon, showing you all the key features.”
+            </p>
+            <p class="scenario-context">
+              When demonstrating a system or tool step-by-step, often with a
+              visual component. This ensures the user can follow along and
+              learn by doing.
+            </p>
+            <p class="scenario-pt">
+              “Vou te guiar pelo novo sistema CRM esta tarde, mostrando todas
+              as funcionalidades principais.”
+            </p>
+          </article>
+
+          <!-- Scenario 2: Explaining a Complex Report -->
+          <article class="scenario-card">
+            <div class="scenario-title">
+              <span class="scenario-emoji">📊</span> Explaining a Complex Report
+            </div>
+            <p class="scenario-example">
+              <span class="you">Presenting to stakeholders:</span><br />
+              “Let me
+              <span class="highlight">talk you through</span> the quarterly
+              financial report, focusing on the main trends and projections.”
+            </p>
+            <p class="scenario-context">
+              When providing a detailed verbal explanation of data, findings,
+              or a document, guiding the listener through each section or point
+              to ensure thorough understanding.
+            </p>
+            <p class="scenario-pt">
+              “Deixe-me te explicar detalhadamente o relatório financeiro
+              trimestral, focando nas principais tendências.”
+            </p>
+          </article>
+
+          <!-- Scenario 3: Guiding through a Procedure -->
+          <article class="scenario-card">
+            <div class="scenario-title">
+              <span class="scenario-emoji">📝</span> Guiding through a Procedure
+            </div>
+            <p class="scenario-example">
+              <span class="you">Customer support call:</span><br />
+              “I can
+              <span class="highlight">walk you through</span> the steps to
+              reset your password. Please follow along with me.”
+            </p>
+            <p class="scenario-context">
+              For guiding someone through a sequence of actions or instructions,
+              often in real-time, ensuring they complete each step correctly.
+            </p>
+            <p class="scenario-pt">
+              “Posso te guiar pelos passos para redefinir sua senha. Por favor,
+              me acompanhe.”
+            </p>
+          </article>
+
+          <!-- Scenario 4: Reviewing a Document -->
+          <article class="scenario-card">
+            <div class="scenario-title">
+              <span class="scenario-emoji">📄</span> Reviewing a Document
+            </div>
+            <p class="scenario-example">
+              <span class="you">Team collaboration:</span><br />
+              “Before we finalize, I’d like to
+              <span class="highlight">talk everyone through</span> the proposed
+              changes in the project scope document.”
+            </p>
+            <p class="scenario-context">
+              When reviewing content section by section, verbally explaining
+              each part to ensure collective understanding and alignment among
+              team members or stakeholders.
+            </p>
+            <p class="scenario-pt">
+              “Antes de finalizarmos, gostaria de explicar a todos as mudanças
+              propostas no documento de escopo do projeto.”
+            </p>
+          </article>
+
+          <!-- Scenario 5: Explaining a Complex Concept -->
+          <article class="scenario-card">
+            <div class="scenario-title">
+              <span class="scenario-emoji">💡</span> Explaining a Complex Concept
+            </div>
+            <p class="scenario-example">
+              <span class="you">Mentoring session:</span><br />
+              “It’s a bit abstract, but I can
+              <span class="highlight">talk you through</span> the core
+              principles of agile methodology.”
+            </p>
+            <p class="scenario-context">
+              For breaking down abstract or difficult concepts into digestible
+              parts, guiding the listener through the logic and implications
+              to build a solid understanding.
+            </p>
+            <p class="scenario-pt">
+              “É um pouco abstrato, mas posso te explicar os princípios
+              fundamentais da metodologia ágil.”
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Section 4: Participative exercises -->
+      <section id="exercises">
+        <h3>Part 4 · Participative practice</h3>
+        <h4>Write, speak, and feel comfortable using "talk/walk someone through"</h4>
+
+        <!-- Exercise 1: Email writing -->
+        <div class="exercise-block">
+          <div class="exercise-title">
+            Exercise 1 · Email about a new process
+          </div>
+          <p class="exercise-instruction">
+            Imagine you need to introduce a new reporting process to your team.
+            Write a short email (4–6 lines) to your team, using
+            <span class="highlight">"walk you through"</span> or
+            <span class="highlight">"talk you through"</span> at least once to
+            offer a detailed explanation. This shows your proactive approach to
+            ensuring everyone understands the new procedure.
+          </p>
+          <p
+            class="exercise-instruction"
+            style="font-size: 0.88rem; color: var(--muted)"
+          >
+            Hint in Portuguese: você pode começar com “I’d like to walk you
+            through…” ou “I’ll talk you through…”.
+          </p>
+          <textarea
+            id="ex1"
+            placeholder="Type your email here in English..."
+          ></textarea>
+          <div class="char-counter" id="ex1-counter">0 characters</div>
+          <div class="buttons-row">
+            <button class="btn-primary" type="button" onclick="checkExercise1()">
+              Check my email
+            </button>
+          </div>
+          <div id="ex1-feedback" class="feedback-message"></div>
+        </div>
+
+        <!-- Exercise 2: Meetings phrases -->
+        <div class="exercise-block">
+          <div class="exercise-title">Exercise 2 · Phrases for meetings</div>
+          <p class="exercise-instruction">
+            Below are four Brazilian-style situations. For each, say out loud a
+            sentence using "talk someone through" or "walk someone through". If
+            you want, write it down to fix it in your memory. Focus on how these
+            phrases convey a more thorough and helpful explanation than simply
+            "explain" or "discuss."
+          </p>
+          <ul style="margin-top: 6px; padding-left: 18px">
+            <li>1. Explicar um novo procedimento de segurança.</li>
+            <li>2. Guiar um cliente pelas opções do produto.</li>
+            <li>3. Detalhar os resultados de uma pesquisa de mercado.</li>
+            <li>4. Mostrar a um colega como usar uma nova ferramenta.</li>
+          </ul>
+          <textarea
+            id="ex2"
+            placeholder="Type your phrases here in English..."
+          ></textarea>
+          <div class="char-counter" id="ex2-counter">0 characters</div>
+          <div class="buttons-row">
+            <button class="btn-primary" type="button" onclick="checkExercise2()">
+              Check my phrases
+            </button>
+          </div>
+          <div id="ex2-feedback" class="feedback-message"></div>
+        </div>
+
+        <!-- Exercise 3: Tone in meetings & calls -->
+        <div class="exercise-block">
+          <div class="exercise-title">Exercise 3 · Tone in meetings & calls</div>
+          <p class="exercise-instruction">
+            How would you say "I'd be happy to walk you through the entire
+            process" with a helpful, reassuring, and confident tone? Practice
+            saying it out loud. Focus on clear pronunciation and a friendly,
+            supportive delivery. This phrase communicates a willingness to
+            provide comprehensive assistance.
+          </p>
+          <p
+            class="exercise-instruction"
+            style="font-size: 0.88rem; color: var(--muted)"
+          >
+            Dica: O objetivo é transmitir disposição para ajudar e clareza, não
+            apenas recitar informações.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 5: Vocabulary Reference -->
+      <section id="vocabulary">
+        <h3>Part 5 · Vocabulary Reference</h3>
+        <h4>Key business terms used in this lesson.</h4>
+        <div class="vocab-grid">
+          <div class="vocab-item">
+            <div class="vocab-term">CRM system</div>
+            <div class="vocab-def">
+              Customer Relationship Management system; software for managing
+              customer interactions and data.
+            </div>
+            <div class="vocab-pt">sistema de CRM.</div>
+          </div>
+
+          <div class="vocab-item">
+            <div class="vocab-term">key features</div>
+            <div class="vocab-def">
+              The most important or prominent characteristics, functions, or
+              aspects of a product, system, or plan.
+            </div>
+            <div class="vocab-pt">funcionalidades principais.</div>
+          </div>
+
+          <div class="vocab-item">
+            <div class="vocab-term">quarterly financial report</div>
+            <div class="vocab-def">
+              A formal document detailing a company's financial performance,
+              including revenues, expenses, and profits, over a three-month
+              period.
+            </div>
+            <div class="vocab-pt">relatório financeiro trimestral.</div>
+          </div>
+
+          <div class="vocab-item">
+            <div class="vocab-term">main trends and projections</div>
+            <div class="vocab-def">
+              The primary patterns, directions, and forecasts derived from data
+              analysis, indicating future developments.
+            </div>
+            <div class="vocab-pt">principais tendências e projeções.</div>
+          </div>
+
+          <div class="vocab-item">
+            <div class="vocab-term">customer support call</div>
+            <div class="vocab-def">
+              A telephone conversation with a customer service representative to
+              receive assistance, resolve issues, or ask questions.
+            </div>
+            <div class="vocab-pt">chamada de suporte ao cliente.</div>
+          </div>
+
+          <div class="vocab-item">
+            <div class="vocab-term">project scope document</div>
+            <div class="vocab-def">
+              A formal document that defines the objectives, deliverables,
+              tasks, costs, and deadlines of a project, outlining its boundaries.
+            </div>
+            <div class="vocab-pt">documento de escopo do projeto.</div>
+          </div>
+
+          <div class="vocab-item">
+            <div class="vocab-term">agile methodology</div>
+            <div class="vocab-def">
+              An iterative and incremental approach to project management and
+              software development, emphasizing flexibility, collaboration, and
+              customer feedback.
+            </div>
+            <div class="vocab-pt">metodologia ágil.</div>
+          </div>
+
+          <div class="vocab-item">
+            <div class="vocab-term">new security procedure</div>
+            <div class="vocab-def">
+              A recently established set of official actions or steps designed
+              to enhance safety, protect data, or prevent unauthorized access.
+            </div>
+            <div class="vocab-pt">novo procedimento de segurança.</div>
+          </div>
+
+          <div class="vocab-item">
+            <div class="vocab-term">product options</div>
+            <div class="vocab-def">
+              The various choices, configurations, or versions available for a
+              particular product or service.
+            </div>
+            <div class="vocab-pt">opções do produto.</div>
+          </div>
+
+          <div class="vocab-item">
+            <div class="vocab-term">market research results</div>
+            <div class="vocab-def">
+              The findings, data, and insights obtained from systematically
+              gathering and analyzing information about a target market.
+            </div>
+            <div class="vocab-pt">resultados de pesquisa de mercado.</div>
+          </div>
+
+          <div class="vocab-item">
+            <div class="vocab-term">new tool</div>
+            <div class="vocab-def">
+              A recently introduced software application, instrument, or device
+              designed to perform a specific task or function more efficiently.
+            </div>
+            <div class="vocab-pt">nova ferramenta.</div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        Created for Brazilian professionals to feel confident using
+        <span class="highlight">"talk someone through"</span> and
+        <span class="highlight">"walk someone through"</span> in real business
+        English.
+      </footer>
+    </main>
+
+    <!-- Small JS for sound + char counters + answer checking -->
+    <script>
+      // Function to play "talk through" sound
+      function playTalkThrough() {
+        if (!("speechSynthesis" in window)) {
+          alert("SpeechSynthesis is not supported in this browser.");
+          return;
+        }
+        const utter = new SpeechSynthesisUtterance("talk someone through");
+        utter.lang = "en-US";
+        speechSynthesis.speak(utter);
+      }
+
+      // Function to play "walk through" sound
+      function playWalkThrough() {
+        if (!("speechSynthesis" in window)) {
+          alert("SpeechSynthesis is not supported in this browser.");
+          return;
+        }
+        const utter = new SpeechSynthesisUtterance("walk someone through");
+        utter.lang = "en-US";
+        speechSynthesis.speak(utter);
+      }
+
+      // Function to set up character counters for textareas
+      function setupCounter(textareaId, counterId) {
+        const ta = document.getElementById(textareaId);
+        const counter = document.getElementById(counterId);
+        if (!ta || !counter) return;
+        ta.addEventListener("input", () => {
+          counter.textContent = ta.value.length + " characters";
+        });
+      }
+
+      // Call setupCounter for both exercise textareas
+      setupCounter("ex1", "ex1-counter");
+      setupCounter("ex2", "ex2-counter");
+
+      // Function to display feedback
+      function showFeedback(elementId, message, type) {
+        const feedbackDiv = document.getElementById(elementId);
+        feedbackDiv.textContent = message;
+        feedbackDiv.className = `feedback-message feedback-${type}`; // Apply styling based on type
+        feedbackDiv.style.display = "block"; // Make it visible
+      }
+
+      // --- Exercise 1: Email about a new process ---
+      function checkExercise1() {
+        const emailText = document.getElementById("ex1").value.toLowerCase();
+        const feedbackId = "ex1-feedback";
+
+        const hasTalkOrWalkThrough =
+          emailText.includes("talk you through") ||
+          emailText.includes("walk you through") ||
+          emailText.includes("talk them through") ||
+          emailText.includes("walk them through") ||
+          emailText.includes("talk us through") ||
+          emailText.includes("walk us through");
+        const hasProcessContext =
+          emailText.includes("process") ||
+          emailText.includes("system") ||
+          emailText.includes("procedure") ||
+          emailText.includes("steps");
+        const isLongEnough = emailText.length > 50;
+
+        if (hasTalkOrWalkThrough && hasProcessContext && isLongEnough) {
+          showFeedback(
+            feedbackId,
+            "Excelente! Você usou 'talk/walk someone through' de forma eficaz para explicar um novo processo. Seu e-mail soa profissional e muito colaborativo. Continue assim!",
+            "correct"
+          );
+        } else if (hasTalkOrWalkThrough && isLongEnough) {
+          showFeedback(
+            feedbackId,
+            "Bom começo! Você usou 'talk/walk someone through'. Agora, tente garantir que o contexto descreva claramente um processo, sistema ou conjunto de passos.",
+            "tip"
+          );
+        } else if (!hasTalkOrWalkThrough && isLongEnough) {
+          showFeedback(
+            feedbackId,
+            "Quase lá! Lembre-se de incluir 'talk/walk someone through' (ou suas variações) no seu e-mail. É fundamental para uma comunicação profissional ao guiar alguém por um processo!",
+            "incorrect"
+          );
+        } else {
+          showFeedback(
+            feedbackId,
+            "Por favor, escreva um pouco mais. Seu e-mail deve ter pelo menos 4–6 linhas para descrever a situação e usar 'talk/walk someone through' naturalmente.",
+            "tip"
+          );
+        }
+      }
+
+      // --- Exercise 2: Phrases for meetings ---
+      function checkExercise2() {
+        const phrasesText = document.getElementById("ex2").value.toLowerCase();
+        const feedbackId = "ex2-feedback";
+
+        const hasTalkOrWalkThrough =
+          (phrasesText.includes("talk") && phrasesText.includes("through")) ||
+          (phrasesText.includes("walk") && phrasesText.includes("through"));
+
+        const hasSecurityProcedure =
+          phrasesText.includes("security") && phrasesText.includes("procedure");
+        const hasProductOptions =
+          phrasesText.includes("product") && phrasesText.includes("options");
+        const hasMarketResearch =
+          phrasesText.includes("market") &&
+          phrasesText.includes("research") &&
+          phrasesText.includes("results");
+        const hasNewTool =
+          phrasesText.includes("new") && phrasesText.includes("tool");
+
+        let correctCount = 0;
+        let tips = [];
+
+        if (hasSecurityProcedure && hasTalkOrWalkThrough) correctCount++;
+        else if (hasSecurityProcedure)
+          tips.push(
+            "Para 'explicar um novo procedimento de segurança', tente: 'I'll walk you through the new security procedure.'"
+          );
+
+        if (hasProductOptions && hasTalkOrWalkThrough) correctCount++;
+        else if (hasProductOptions)
+          tips.push(
+            "Para 'guiar um cliente pelas opções do produto', considere: 'I can talk the client through the product options.'"
+          );
+
+        if (hasMarketResearch && hasTalkOrWalkThrough) correctCount++;
+        else if (hasMarketResearch)
+          tips.push(
+            "Para 'detalhar os resultados de uma pesquisa de mercado', use: 'Let me walk you through the market research results.'"
+          );
+
+        if (hasNewTool && hasTalkOrWalkThrough) correctCount++;
+        else if (hasNewTool)
+          tips.push(
+            "Para 'mostrar a um colega como usar uma nova ferramenta', tente: 'I'll talk my colleague through how to use the new tool.'"
+          );
+
+        if (!hasTalkOrWalkThrough) {
+          showFeedback(
+            feedbackId,
+            "Certifique-se de usar 'talk someone through' ou 'walk someone through' (ou suas variações) em suas frases para cada cenário!",
+            "incorrect"
+          );
+          return;
+        }
+
+        if (correctCount === 4) {
+          showFeedback(
+            feedbackId,
+            "Fantástico! Você capturou todos os quatro cenários perfeitamente usando 'talk/walk someone through'. Sua compreensão é excelente!",
+            "correct"
+          );
+        } else if (correctCount > 0) {
+          showFeedback(
+            feedbackId,
+            `Muito bom! Você abordou corretamente ${correctCount} de 4 cenários. Aqui estão algumas dicas para os outros: ${tips.join(
+              " "
+            )}`,
+            "tip"
+          );
+        } else {
+          showFeedback(
+            feedbackId,
+            "Continue tentando! Lembre-se de usar 'talk someone through' ou 'walk someone through' para cada situação. Foque em guiar ativamente a pessoa pela informação. " +
+              tips.join(" "),
+            "incorrect"
+          );
+        }
+      }
+    </script>
+  </body>
+</html>
